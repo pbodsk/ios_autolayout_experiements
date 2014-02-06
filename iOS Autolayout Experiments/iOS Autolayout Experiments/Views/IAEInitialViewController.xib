@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IAEInitialViewController">
             <connections>
+                <outlet property="bottomButton" destination="VxP-wE-yeg" id="JA7-be-9gn"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -27,11 +28,21 @@
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxP-wE-yeg">
+                    <rect key="frame" x="137" y="453" width="46" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" name="gridColor" catalog="System" colorSpace="catalog"/>
             <constraints>
                 <constraint firstItem="jee-8y-IKe" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="Hpi-sl-FcV"/>
                 <constraint firstItem="LG8-ZE-uOr" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="KQc-OL-feX"/>
+                <constraint firstAttribute="centerY" secondItem="VxP-wE-yeg" secondAttribute="centerY" constant="-214.5" id="Y7z-NC-LRJ"/>
+                <constraint firstAttribute="bottom" secondItem="VxP-wE-yeg" secondAttribute="bottom" constant="25" id="YhE-cI-LzK"/>
+                <constraint firstAttribute="centerX" secondItem="VxP-wE-yeg" secondAttribute="centerX" id="qYw-TK-4hR"/>
                 <constraint firstItem="LG8-ZE-uOr" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="ruh-cN-4Xh"/>
                 <constraint firstAttribute="trailing" secondItem="jee-8y-IKe" secondAttribute="trailing" constant="20" symbolic="YES" id="zbT-s3-hHy"/>
             </constraints>

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface IAEInitialViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *bottomButton;
 
 @end
