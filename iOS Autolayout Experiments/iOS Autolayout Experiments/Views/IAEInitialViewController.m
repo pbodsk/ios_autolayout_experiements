@@ -28,7 +28,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.bottomButton attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.bottomButton attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
+
+/*    NSDictionary *views = @{@"bottomButton": self.bottomButton};
+    NSArray *constraints = [NSLayoutConstraint constraintsWithVisualFormat:@"h:|[bottomButton]|" options:0 metrics:nil views:views];
+    [self.view addConstraints:constraints];
+ */
 
 }
 
